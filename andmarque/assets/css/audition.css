@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+body {
+  width: 100%;
+  overflow-Y: hidden;
+  color: #fff;
+  background: #ff3902;
+}
+
+/*container*/
+.container {
+  width: 94.28%;
+  height: 85.33vh;
+  box-sizing: border-box;
+}
+
+/*padding*/
+.row {
+  padding: 0;
+  height: inherit;
+  border: 1px solid white;
+}
+
+/*layout*/
+#fixed {
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#section1 {
+  width: 100%;
+  height: 100vh;
+}
+
+/*fixed*/
+.fixed {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fixed .upside {
+  position: relative;
+  width: 100%;
+  line-height: 38px;
+  height: 38px;
+}
+
+.fixed .upside .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fixed .upside .logo h1 a {
+  color: #fff;
+  font-weight: 800;
+  font-size: 26px;
+}
+
+.fixed .upside>div {}
+
+.fixed .upside .nav {
+  display: inline-block;
+  margin-left: 26.92vw;
+}
+
+.fixed .upside .nav ul {}
+
+.fixed .upside .nav ul li {
+  float: left;
+  margin-right: 7.64vw;
+  position: relative;
+}
+
+.fixed .upside .nav ul li:last-child {
+  margin-right: 0;
+}
+
+.fixed .upside .nav ul li span {
+  vertical-align: -3px;
+  font-size: 15px;
+}
+
+.fixed .upside .nav ul li a {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.fixed .upside .nav ul li.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -6px;
+  bottom: 18px;
+  width: 70px;
+  height: .7px;
+  background: #fff;
+}
+
+.fixed .upside .lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.fixed .upside .lang span {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14.3px;
+  position: relative;
+}
+
+.fixed .upside .lang span.active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  height: .7px;
+  background: #fff;
+}
+
+.fixed .upside .lang span:last-child {
+  margin-left: 2.6vw;
+}
+
+.fixed .upside #ham {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 24px;
+  cursor: pointer;
+  /* background:#ccc; */
+}
+
+.fixed .upside #ham span {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.fixed .downside {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fixed .downside .sns {
+  display: inline-block;
+}
+
+.fixed .downside .sns ul {
+  display: inline-block;
+}
+
+.fixed .downside .sns ul li {
+  display: inline-block;
+  padding-right: 3.57vw;
+}
+
+.fixed .downside .sns ul li a {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+}
+
+.fixed .downside .sns ul li a span {
+  vertical-align: -3px;
+  font-size: 15px;
+}
+
+.fixed .downside .mark {
+  float: right;
+}
+
+.fixed .downside .mark span {
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*sec1*/
+.sec1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sec1 .left {
+  width: 50%;
+  height: 100%;
+  padding: 26.8vh 12vw;
+}
+
+.sec1 .left>em {
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.sec1 .left h3 {
+  font-weight: 700;
+  font-family: 'Nanum Myeongjo', serif;
+  color: #fff;
+  font-size: 72px;
+  line-height: 1;
+}
+
+.sec1 .left span {
+  display: inline-block;
+  padding-top: 48px;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.sec1 .left p {
+  display: inline-block;
+  padding-top: 23px;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  max-width: 380px;
+}
+
+.sec1 .right {
+  width: 50%;
+  height: 100%;
+  padding: 26.8vh 0;
+}
+
+.sec1 .right ul li h4 {
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.sec1 .right ul li p {
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+
+.sec1 .right ul li p>span {
+  font-size: 8px;
+  vertical-align: 3px;
+}
+
+.sec1 .right ul li p strong {
+  font-weight: 700;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sec1 .right .aud_btn {
+  position: relative;
+  z-index: 600;
+}
+
+.sec1 .right .aud_btn a {
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  background: #fff;
+  color: #ff3902;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+}
+
+@media(max-width:1400px) {}
+
+@media(max-width:1200px) {
+  .row {
+    padding: 0 30px;
+  }
+}
+
+@media(max-width:1080px) {
+  .sec1 {
+    flex-direction: column;
+  }
+
+  .sec1 .left,
+  .sec1 .right {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec1 .left {
+    padding-top: 15%;
+  }
+
+  .sec1 .right {
+    padding-top: 0;
+  }
+
+  .sec1 .left span {
+    padding: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .sec1 .left p {
+    max-width: 500px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .sec1 .left>em {
+    display: none;
+  }
+
+  .sec1 .right ul {
+    width: 68%;
+  }
+
+  .sec1 .right ul li h4 {
+    font-size: 15px;
+  }
+
+  .sec1 .right ul li p {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+}
+
+@media(max-width:900px) {}
+
+@media(max-width:800px) {
+  .fixed .upside .lang {
+    display: none;
+  }
+
+  .fixed .upside .nav {
+    display: none;
+  }
+
+  .fixed .upside #ham {
+    display: block;
+  }
+
+}
+
+
+@media(max-width:680px) {}
+
+@media(max-width:600px) {
+  .sec1 .left h3 {
+    padding-top: 30px;
+  }
+
+  .sec1 .right {
+    position: relative;
+  }
+
+  .sec1 .right ul li p {
+    max-width: 200px;
+  }
+
+  .sec1 .right .aud_btn {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+
+  .sec1 .right .aud_btn a {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+  }
+
+
+}
